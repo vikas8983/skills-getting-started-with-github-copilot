@@ -158,7 +158,7 @@ footer {
 }
 
 .participants-list {
-  list-style: none;
+  list-style: none; /* hide bullets */
   padding: 0;
   margin: 0;
 }
@@ -190,6 +190,27 @@ footer {
   font-size: 14px;
   color: #444;
   word-break: break-word;
+}
+
+/* Delete/unregister button next to each participant */
+.participant-delete {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.participant-delete:hover {
+  background-color: rgba(198, 40, 40, 0.08);
+}
+
+.participant-delete:focus {
+  outline: 2px solid rgba(198, 40, 40, 0.25);
 }
 
 /* small helpful "no participants" text uses existing .info style */
